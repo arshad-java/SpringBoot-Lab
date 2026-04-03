@@ -1,22 +1,20 @@
 package com.nit.entity;
 
-import org.hibernate.annotations.CollectionId;
 import org.springframework.stereotype.Component;
 
 import jakarta.annotation.Nonnull;
-import jakarta.persistence.CheckConstraint;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.RequiredArgsConstructor;
+import lombok.NoArgsConstructor;
 
 @Data
 @Entity
 @AllArgsConstructor
-@RequiredArgsConstructor
+@NoArgsConstructor
 @Component
 @Table(name = "Food_Order_Tab")
 public class FoodOrder {
